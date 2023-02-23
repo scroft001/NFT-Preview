@@ -18,13 +18,19 @@ const Card = () => {
         <h1>Equilibrium #3429</h1>
         <p>Our Equilibrium collection promotes balance and calm.</p>
         <div className="app__card-price">
-            <p><img src={eth} alt="eth" />0.041 ETH</p>
-            <p><img src={clock} alt="clock" />3 days left</p>
+            <div>
+                <img src={eth} alt="eth" />
+                <p id='eth'>0.041 ETH</p>
+            </div>
+            <div>
+                <img src={clock} alt="clock" />
+                <p>3 days left</p>
+            </div>
         </div>
         <hr />
         <div className="app__card-user">
             <img src={avatar} alt="avatar" />
-            <p>Creation of Jules Wyvern</p>
+            <p>Creation of <span>Jules Wyvern</span></p>
         </div>
     </main>
   )
