@@ -11,9 +11,9 @@ const Card = () => {
     <main className='app__card'>
         <div className="app__card-image">
             <img src={nft} alt="nft" />
-            {/* <div className='view'>
+            <div className='view'>
                 <img src={view} alt="nft" />
-            </div> */}
+            </div>
         </div>
         <h1>Equilibrium #3429</h1>
         <p>Our Equilibrium collection promotes balance and calm.</p>

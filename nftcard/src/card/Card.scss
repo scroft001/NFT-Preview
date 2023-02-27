@@ -8,6 +8,10 @@
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    @media screen and (max-width: 400px){
+        width: 80%;
+        margin: auto;
+    }
     h1{
         font-size: 20px;
         margin-bottom: -0.2rem;
@@ -28,9 +32,13 @@
 
 .app__card-image{
     width: 100%;
+    position: relative;
     img{
         width: 100%;
         border-radius: 0.5rem;
+    }
+    &:hover .view{
+        visibility: visible;
     }
 }
 
@@ -72,5 +80,23 @@
             color: var(--White);
         }
         
+    }
+}
+
+.view{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    border-radius: 0.5rem;
+    img{
+        width: 30px;
     }
 }
